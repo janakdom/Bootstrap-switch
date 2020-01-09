@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap switch</title>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name='robots' content='index,follow' />
+
+    <meta name='author' content='Dominik Janák' />
+    <meta name="description" content='Simple Bootstrap switch design' />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+		h1 {font-size: 275%;}
+		h2 {font-size: 180%; margin-bottom: 0px;}
+		h3 {font-size: 125%;}
+		.table h3 { margin: 8px 0 -3px 0;}
+	</style>
+	<link href="styles.css" rel="stylesheet"  />
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header text-center mt-4 mb-3">
+                <h1>Bootstrap switch</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+			<h2>Sizes</h2>
+			<table class="table table-borderless table-sm">
+				<tr>
+					<td colspan="3"><h3>Small</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch small">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger small">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger small">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h3>Normal</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h3>Big</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch big">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger big">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger big">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h3>xBig</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch xbig">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger xbig">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger xbig">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+			</table>
+			
+			
+			<h2>Styles</h2>
+			<table class="table table-borderless table-sm">
+				<tr>
+					<td colspan="3"><h3>Squared</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><h3>Rounded</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<label class="switch round">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger round">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+					<td>
+						<label class="switch danger round">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+			</table>
+			
+			<h2>Title</h2>
+			<table class="table table-borderless table-sm">
+				<tr>
+					<td class="pt-3">
+						<div class="form-check pl-0">
+							<label id="s-1" class="switch danger round small">
+								<input type="checkbox" id="swith_1" />
+								<div class="slider"></div>
+							</label>
+							<label class="form-check-label" for="swith_1">Check me out</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="pt-3">
+						<div class="form-check pl-0">
+							<label id="s-1" class="switch danger round">
+								<input type="checkbox" id="swith_1" />
+								<div class="slider"></div>
+							</label>
+							<label class="form-check-label" for="swith_1">Check me out</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="pt-3">
+						<div class="form-check pl-0">
+							<label id="s-1" class="switch danger round big">
+								<input type="checkbox" id="swith_2" />
+								<div class="slider"></div>
+							</label>
+							<label class="form-check-label" for="swith_2">Check me out</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="pt-3">
+						<div class="form-check pl-0">
+							<label id="s-1" class="switch danger round xbig">
+								<input type="checkbox" id="swith_2" />
+								<div class="slider"></div>
+							</label>
+							<label class="form-check-label" for="swith_2">Check me out</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+	<div class="row">
+        <div class="col-md-12">
+            <div class="page-header text-center mt-4 mb-3">
+                <p>Copyright &copy; 2020 &#11820; <a href="https://www.dominikjanak.cz/">Dominik Janák</a> &#11820; GNU GPL v.3</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 
