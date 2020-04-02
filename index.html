@@ -13,10 +13,13 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-		h1 {font-size: 275%;}
-		h2 {font-size: 180%; margin-bottom: 0px;}
-		h3 {font-size: 125%;}
+		h1 {font-size: 305%;}
+		h2 {font-size: 210%;}
+		h3 {font-size: 155%;}
+		h4 {font-size: 125%;}
+		.table tr td { vertical-align: middle; }
 		.table h3 { margin: 8px 0 -3px 0;}
+		.table h3 {padding: 0; margin: 0;}
 	</style>
 	<link href="styles.css" rel="stylesheet"  />
 </head>
@@ -25,210 +28,270 @@
     <div class="row">
         <div class="col-md-12">
             <div class="page-header text-center mt-4 mb-3">
-                <h1>Bootstrap switch</h1>
+                <h1>Bootstrap components</h1>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-			<h2>Sizes</h2>
-			<table class="table table-borderless table-sm">
+        <div class="col-md-4 offset-md-2">
+			<h2>Switch</h2>
+			<table class="table table-striped">
+				<thead>
 				<tr>
-					<td colspan="3"><h3>Small</h3></td>
+					<th><h3>Size</h3></th>
+					<th>Preview</th>
 				</tr>
+				</thead>
 				<tr>
+					<td>xSmall</td>
 					<td>
-						<label class="switch small">
+						<label class="switch danger xsmall">
 							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
+				</tr>
+				<tr>
+					<td>Small</td>
 					<td>
 						<label class="switch danger small">
 							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
-					<td>
-						<label class="switch danger small">
-							<input type="checkbox" checked />
-							<span class="slider"></span>
-						</label>
-					</td>
 				</tr>
 				<tr>
-					<td colspan="3"><h3>Normal</h3></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="switch">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
+					<td>Normal</td>
 					<td>
 						<label class="switch danger">
 							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
+				</tr>
+				<tr>
+					<td>Big</td>
 					<td>
-						<label class="switch danger">
-							<input type="checkbox" checked />
+						<label class="switch danger big">
+							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3"><h3>Big</h3></td>
+					<td>xBig</td>
+					<td>
+						<label class="switch danger xbig">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+
+				<thead>
+				<tr>
+					<th><h3>Style</h3></th>
+					<th>Preview</th>
+				</tr>
+				</thead>
+				<tr>
+					<td>Squared</td>
+					<td>
+						<label class="switch danger big">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
 				</tr>
 				<tr>
+					<td>Rounded</td>
+					<td>
+						<label class="switch danger round big">
+							<input type="checkbox" />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+
+				<thead>
+				<tr>
+					<th><h3>Colors</h3></th>
+					<th>Preview</th>
+				</tr>
+				</thead>
+				<tr>
+					<td>Gray</td>
 					<td>
 						<label class="switch big">
 							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
+				</tr>
+				<tr>
+					<td>Green</td>
+					<td>
+						<label class="switch big">
+							<input type="checkbox" checked />
+							<span class="slider"></span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Red</td>
 					<td>
 						<label class="switch danger big">
 							<input type="checkbox" />
 							<span class="slider"></span>
 						</label>
 					</td>
+				</tr>
+
+				<thead>
+				<tr>
+					<th><h3>Title</h3></th>
+					<th>Preview</th>
+				</tr>
+				</thead>
+				<tr>
+					<td>xSmall</td>
+					<td>
+						<label class="switch danger xsmall">
+							<input type="checkbox" id="swith_1" />
+							<div class="slider"></div>
+						</label>
+						<label class="form-check-label" for="swith_1">Label</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Small</td>
+					<td>
+						<label class="switch danger small">
+							<input type="checkbox" id="swith_2" />
+							<div class="slider"></div>
+						</label>
+						<label class="form-check-label" for="swith_2">Label</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Normal</td>
+					<td>
+						<label class="switch danger">
+							<input type="checkbox" id="swith_3" />
+							<div class="slider"></div>
+						</label>
+						<label class="form-check-label" for="swith_3">Label</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Big</td>
 					<td>
 						<label class="switch danger big">
-							<input type="checkbox" checked />
-							<span class="slider"></span>
+							<input type="checkbox" id="swith_4" />
+							<div class="slider"></div>
 						</label>
+						<label class="form-check-label" for="swith_4">Label</label>
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3"><h3>xBig</h3></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="switch xbig">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
+					<td>xBig</td>
 					<td>
 						<label class="switch danger xbig">
-							<input type="checkbox" />
-							<span class="slider"></span>
+							<input type="checkbox" id="swith_5" />
+							<div class="slider"></div>
 						</label>
-					</td>
-					<td>
-						<label class="switch danger xbig">
-							<input type="checkbox" checked />
-							<span class="slider"></span>
-						</label>
-					</td>
-				</tr>
-			</table>
-			
-			
-			<h2>Styles</h2>
-			<table class="table table-borderless table-sm">
-				<tr>
-					<td colspan="3"><h3>Squared</h3></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="switch">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
-					<td>
-						<label class="switch danger">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
-					<td>
-						<label class="switch danger">
-							<input type="checkbox" checked />
-							<span class="slider"></span>
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3"><h3>Rounded</h3></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="switch round">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
-					<td>
-						<label class="switch danger round">
-							<input type="checkbox" />
-							<span class="slider"></span>
-						</label>
-					</td>
-					<td>
-						<label class="switch danger round">
-							<input type="checkbox" checked />
-							<span class="slider"></span>
-						</label>
-					</td>
-				</tr>
-			</table>
-			
-			<h2>Title</h2>
-			<table class="table table-borderless table-sm">
-				<tr>
-					<td class="pt-3">
-						<div class="form-check pl-0">
-							<label id="s-1" class="switch danger round small">
-								<input type="checkbox" id="swith_1" />
-								<div class="slider"></div>
-							</label>
-							<label class="form-check-label" for="swith_1">Check me out</label>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="pt-3">
-						<div class="form-check pl-0">
-							<label id="s-1" class="switch danger round">
-								<input type="checkbox" id="swith_1" />
-								<div class="slider"></div>
-							</label>
-							<label class="form-check-label" for="swith_1">Check me out</label>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="pt-3">
-						<div class="form-check pl-0">
-							<label id="s-1" class="switch danger round big">
-								<input type="checkbox" id="swith_2" />
-								<div class="slider"></div>
-							</label>
-							<label class="form-check-label" for="swith_2">Check me out</label>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="pt-3">
-						<div class="form-check pl-0">
-							<label id="s-1" class="switch danger round xbig">
-								<input type="checkbox" id="swith_2" />
-								<div class="slider"></div>
-							</label>
-							<label class="form-check-label" for="swith_2">Check me out</label>
-						</div>
+						<label class="form-check-label" for="swith_5">Label</label>
 					</td>
 				</tr>
 			</table>
         </div>
-        <div class="col-md-4">
+
+		<div class="col-md-4">
+			<h2>Radio</h2>
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th><h3>Size</h3></th>
+					<th>Preview</th>
+				</tr>
+				</thead>
+				<tr>
+					<td>xSmall</td>
+					<td>
+						<div class="radio-xsmall">
+							<label class="radio">Male
+								<input type="radio" checked="checked" name="gender1">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Female
+								<input type="radio" name="gender1">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Small</td>
+					<td>
+						<div class="radio-small">
+							<label class="radio">Male
+								<input type="radio" checked="checked" name="gender2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Female
+								<input type="radio" name="gender2">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Normal</td>
+					<td>
+						<div class="">
+							<label class="radio">Male
+								<input type="radio" checked="checked" name="gender3">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Female
+								<input type="radio" name="gender3">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Big</td>
+					<td>
+						<div class="radio-big">
+							<label class="radio">Male
+								<input type="radio" checked="checked" name="gender4">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Female
+								<input type="radio" name="gender4">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>xBig</td>
+					<td>
+						<div class="radio-xbig">
+							<label class="radio">Male
+								<input type="radio" checked="checked" name="gender5">
+								<span class="checkmark"></span>
+							</label>
+							<label class="radio">Female
+								<input type="radio" name="gender5">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
         </div>
     </div>
 	<div class="row">
